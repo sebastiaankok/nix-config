@@ -49,7 +49,7 @@ in
   programs.home-manager.enable = true;
 
   imports = [
-    ./configuration.nix
+    ./local.nix
     nixvim.homeManagerModules.nixvim
     ./term
   ];

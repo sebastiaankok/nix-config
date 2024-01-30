@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat << EOF > ./configuration.nix
+cat << EOF > ./local.nix
 {
   home.username = "$USER";
   home.homeDirectory = "$HOME";
