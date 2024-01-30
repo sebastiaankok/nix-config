@@ -18,7 +18,6 @@
         { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; } # Installations with additional options. For the list of options, please refer to Zplug README.
         { name = "plugins/git"; tags = [ from:oh-my-zsh ]; }
         { name = "nnao45/zsh-kubectl-completion";}
-        { name = "bobsoppe/zsh-ssh-agent";}
         { name = "zsh-users/zsh-syntax-highlighting";}
       ];
     };
