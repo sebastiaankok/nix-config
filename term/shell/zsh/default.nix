@@ -6,7 +6,7 @@
     shellAliases = {
       ll = "ls -l";
       k = "kubecolor";
-      up = "home-manager switch && source ~/.zshrc";
+      up = "home-manager switch ; source ~/.zshrc";
     };
     zplug = {
       enable = true;
