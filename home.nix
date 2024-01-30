@@ -86,5 +86,6 @@ in
     ./neovim/completion.nix
     ./neovim/default.nix
     ./neovim/plugins.nix
+    ./zsh/default.nix
   ];
 }
