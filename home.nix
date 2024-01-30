@@ -11,35 +11,38 @@ in
   home.stateVersion = "23.11";
 
   home.packages = with pkgs; [
+    # languages
     python3
     python311Packages.pip
     virtualenv
     go
 
+    # system tools
     yq
     jq
     coreutils-full
+    tree
     nettools
     vivid
 
+    # kubernetes
     k9s
     kubectl
-    kubectl-cnpg
-    kubectl-view-allocations
     kubecolor
     krew
     kubernetes-helm
     helm-docs
-
-    vault
-    vault-medusa
     cilium-cli
-    bws
     teleport
     argocd
     stern
     velero
     restic
+
+    # automation
+    vault
+    vault-medusa
+    bws
   ];
 
   home.sessionVariables = {
