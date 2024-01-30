@@ -24,6 +24,7 @@ in
     tree
     nettools
     vivid
+    diff-so-fancy
 
     # kubernetes
     k9s
@@ -50,6 +51,15 @@ in
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  programs.git = {
+    enable = true;
+    extraConfig = {
+      color = { ui = true; };
+      core = { pager = "diff-so-fancy | less --tabs=4 -RF"; };
+      interactive = {diffFilter = "diff-so-fancy --patch"; };
+    };
+  };
 
   imports = [
     ./local.nix
