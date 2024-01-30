@@ -5,6 +5,8 @@
     enableCompletion = true;
     shellAliases = {
       ll = "ls -l";
+      k = "kubectl";
+      up = "home-manager switch";
     };
     zplug = {
       enable = true;

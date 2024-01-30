@@ -61,6 +61,7 @@
     command_execution_time    # previous command duration
     virtualenv                # python virtual environment
     context                   # user@host
+    kubecontext               # kubernetes
     # time                    # current time
   )
 
@@ -195,3 +196,5 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 # Set files/dir colors
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+
+export POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|k'
