@@ -5,8 +5,8 @@
     enableCompletion = true;
     shellAliases = {
       ll = "ls -l";
-      k = "kubectl";
-      up = "home-manager switch";
+      k = "kubecolor";
+      up = "home-manager switch && source ~/.zshrc";
     };
     zplug = {
       enable = true;
@@ -16,6 +16,7 @@
         { name = "plugins/git"; tags = [ from:oh-my-zsh ]; }
         { name = "nnao45/zsh-kubectl-completion";}
         { name = "bobsoppe/zsh-ssh-agent";}
+        { name = "atuinsh/atuin";}
       ];
     };
 

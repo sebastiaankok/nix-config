@@ -197,4 +197,9 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
-export POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|k'
+export POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|k|kubecolor|k9s'
+
+# Make autocomplete work for kubecolor
+compdef kubecolor=kubectl
+
+function kpass () { jq -r '.data | map_values(@base64d)' | sed 's/\\n/\n/g;' }
