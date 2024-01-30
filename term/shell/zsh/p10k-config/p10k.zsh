@@ -203,3 +203,5 @@ export POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|k|k
 compdef kubecolor=kubectl
 
 function kpass () { jq -r '.data | map_values(@base64d)' | sed 's/\\n/\n/g;' }
+
+source <(switcher init zsh)

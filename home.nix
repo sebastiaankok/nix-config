@@ -26,7 +26,6 @@ in
 
     k9s
     kubectl
-    kubeswitch
     kubectl-cnpg
     kubectl-view-allocations
     kubecolor
@@ -44,6 +43,7 @@ in
     velero
     restic
   ];
+
 
   home.file = {
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
