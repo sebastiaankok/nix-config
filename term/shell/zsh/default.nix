@@ -8,6 +8,7 @@
       k = "kubecolor";
       up = "home-manager switch ; source ~/.zshrc";
       kx = "switch";
+      ls = "ls --color=auto";
       synccluster = "export KUBECONFIG=$HOME/.kube/config; echo '' > $KUBECONFIG; tsh kube login --all --set-context-name {{.KubeName}}";
     };
     zplug = {

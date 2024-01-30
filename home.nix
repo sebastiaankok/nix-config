@@ -18,7 +18,9 @@ in
 
     yq
     jq
+    coreutils-full
     nettools
+    vivid
 
     k9s
     kubectl

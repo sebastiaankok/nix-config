@@ -196,6 +196,7 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 # Set files/dir colors
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+export LS_COLORS=$(vivid generate molokai)
 
 export POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|k|kubecolor|k9s'
 
