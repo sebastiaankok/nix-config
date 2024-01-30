@@ -16,7 +16,6 @@
         { name = "plugins/git"; tags = [ from:oh-my-zsh ]; }
         { name = "nnao45/zsh-kubectl-completion";}
         { name = "bobsoppe/zsh-ssh-agent";}
-        { name = "atuinsh/atuin";}
       ];
     };
 
