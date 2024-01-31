@@ -199,7 +199,7 @@ export POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|k|k
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export LS_COLORS=$(vivid generate molokai)
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=white,bold"
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#888888"
 
 # Make autocomplete work for kubecolor
 compdef kubecolor=kubectl
