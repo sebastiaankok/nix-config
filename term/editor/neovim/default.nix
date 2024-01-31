@@ -18,6 +18,9 @@
       softtabstop = 0; # If non-zero, number of spaces to insert for a <Tab> (local to buffer)
       expandtab = true; # Expand <Tab> to spaces in Insert mode (local to buffer)
       autoindent = true; # Do clever autoindenting
+
+      # Disable mouse
+      mouse = "";
     };
 
     highlight.ExtraWhitespace.bg = "red";
