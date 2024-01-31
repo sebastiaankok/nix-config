@@ -5,7 +5,3 @@ kubeconfigStores:
    kubeconfigName: "*"
    paths:
      - ~/.kube/configs
- - kind: filesystem
-   kubeconfigName: "config"
-   paths:
-     - ~/.kube
