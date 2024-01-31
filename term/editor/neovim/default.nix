@@ -4,15 +4,14 @@
     defaultEditor = true;
     viAlias = true;
     vimAlias = true;
-    colorschemes.gruvbox.enable = true;
+
+    colorschemes.onedark.enable = true;
 
     luaLoader.enable = true;
 
     options = {
-      number = true;         # Show line numbers
+      number = true; # Show line numbers
       updatetime = 100; # Faster completion
-
-      # Tab options
       tabstop = 2; # Number of spaces a <Tab> in the text stands for (local to buffer)
       shiftwidth = 2; # Number of spaces used for each step of (auto)indent (local to buffer)
       softtabstop = 0; # If non-zero, number of spaces to insert for a <Tab> (local to buffer)
@@ -25,6 +24,8 @@
 
     highlight.ExtraWhitespace.bg = "red";
     match.ExtraWhitespace = "\\s\\+$";
+
+    # Example on how to change settings for certain files.
     autoCmd = [
       {
         event = "FileType";
@@ -40,4 +41,5 @@
     ./plugins/autopairs.nix
     ./plugins/colorizer.nix
   ];
+
 }
