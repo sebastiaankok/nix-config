@@ -193,19 +193,25 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 (( ${#p10k_config_opts} )) && setopt ${p10k_config_opts[@]}
 'builtin' 'unset' 'p10k_config_opts'
 
+# Extra zsh/p10k settings
+export POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|k|kubecolor|k9s'
 # Set files/dir colors
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export LS_COLORS=$(vivid generate molokai)
-
-export POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|k|kubecolor|k9s'
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=white,bold"
 
 # Make autocomplete work for kubecolor
 compdef kubecolor=kubectl
 
-function kpass () { jq -r '.data | map_values(@base64d)' | sed 's/\\n/\n/g;' }
-
+# Make switcher work
 source <(switcher init zsh)
 
+# Export path for krew plugins
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# Disable vim keybinds, to make CTLR+A work.
+bindkey -e
+
+# Kubectl decode secrets
+function kpass () { jq -r '.data | map_values(@base64d)' | sed 's/\\n/\n/g;' }
