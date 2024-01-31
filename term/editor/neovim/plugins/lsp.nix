@@ -26,7 +26,27 @@
           bashls.enable = true;
           cmake.enable = true;
           nixd.enable = true;
-          pyright.enable = true;
+          # python
+          ruff-lsp.enable = true;
+          pylsp = {
+            enable = true;
+            settings = {
+              plugins = {
+                jedi_completion.fuzzy = true;
+                pylsp_mypy.enabled = true;
+                autopep8.enabled = false;
+                flake8.enabled = false;
+                mccabe.enabled = false;
+                preload.enabled = false;
+                pycodestyle.enabled = false;
+                pydocstyle.enabled = false;
+                pyflakes.enabled = false;
+                pylint.enabled = false;
+                ruff.enabled = false;
+                yapf.enabled = false;
+              };
+            };
+          };
           gopls.enable = true;
           terraformls.enable = true;
           yamlls = {

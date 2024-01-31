@@ -25,6 +25,7 @@ in
     nettools
     vivid
     diff-so-fancy
+    ripgrep
 
     # kubernetes
     k9s

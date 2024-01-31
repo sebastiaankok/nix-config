@@ -5,6 +5,11 @@
     viAlias = true;
     vimAlias = true;
 
+    globals = {
+      mapleader = " ";
+      maplocalleader = " ";
+    };
+
     colorschemes.onedark.enable = true;
 
     luaLoader.enable = true;
@@ -18,8 +23,11 @@
       expandtab = true; # Expand <Tab> to spaces in Insert mode (local to buffer)
       autoindent = true; # Do clever autoindenting
 
-      # Disable mouse
+      # disable mouse
       mouse = "";
+
+      # Folding
+      foldlevel = 99; # Folds with a level higher than this number will be closed
     };
 
     highlight.ExtraWhitespace.bg = "red";
@@ -40,6 +48,11 @@
     ./plugins/gitsigns.nix
     ./plugins/autopairs.nix
     ./plugins/colorizer.nix
+    ./plugins/treesitter.nix
+    ./plugins/which-key.nix
+    ./plugins/neo-tree.nix
+    ./plugins/telescope.nix
+    ./plugins/efm.nix
   ];
 
 }
