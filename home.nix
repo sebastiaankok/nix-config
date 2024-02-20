@@ -26,6 +26,7 @@ in
     vivid
     diff-so-fancy
     ripgrep
+    eza
 
     # kubernetes
     k9s

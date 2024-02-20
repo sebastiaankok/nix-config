@@ -4,12 +4,16 @@
     enableAutosuggestions = true;
     enableCompletion = true;
     shellAliases = {
-      ll = "ls -l";
       k = "kubecolor";
       up = "home-manager switch ; source ~/.zshrc";
       kx = "switch";
-      ls = "ls --color=auto";
       synccluster = "export KUBECONFIG=$HOME/.kube/config; echo '' > $KUBECONFIG; tsh kube login --all --set-context-name {{.KubeName}}";
+      ld = "eza -lD --icons=always" ;
+      lf = "eza -lF --color=always --icons=always | grep -v /";
+      lh = "eza -dl --group-directories-first --icons=always";
+      ll = "eza -al --group-directories-first --icons=always";
+      ls = "eza -alF --color=always --sort=size --icons=always | grep -v /";
+      lt = "eza -al --sort=modified --icons=always";
     };
     zplug = {
       enable = true;
