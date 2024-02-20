@@ -194,7 +194,7 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 'builtin' 'unset' 'p10k_config_opts'
 
 # Extra zsh/p10k settings
-export POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|k|kubecolor|k9s'
+export POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|k|kubecolor|k9s|kx'
 # Set files/dir colors
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
