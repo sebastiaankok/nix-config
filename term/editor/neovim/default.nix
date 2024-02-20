@@ -10,7 +10,17 @@
       maplocalleader = " ";
     };
 
-    colorschemes.onedark.enable = true;
+    colorschemes.gruvbox.enable = true;
+
+    colorschemes.gruvbox.settings.italics = false;
+
+    colorschemes.gruvbox.settings = {
+       italic = {
+         strings = false ;
+         operators = false ;
+         comments = false ;
+      };
+    };
 
     luaLoader.enable = true;
 
@@ -53,6 +63,7 @@
     ./plugins/neo-tree.nix
     ./plugins/telescope.nix
     ./plugins/efm.nix
+    ./plugins/gitblame.nix
   ];
 
 }
