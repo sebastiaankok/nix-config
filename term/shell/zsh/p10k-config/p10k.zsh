@@ -42,6 +42,7 @@
   local red='#FF5C57'
   local yellow='#F3F99D'
   local blue='#57C7FF'
+  local green='#98971a'
   local magenta='#FF6AC1'
   local cyan='#9AEDFE'
   local white='#F1F1F0'
@@ -96,7 +97,7 @@
   typeset -g POWERLEVEL9K_VIRTUALENV_{LEFT,RIGHT}_DELIMITER=
 
   # Blue current directory.
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND=$blue
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND=$green
 
   # Context format when root: user@host. The first part white, the rest grey.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE="%F{$white}%n%f%F{$grey}@%m%f"
@@ -182,6 +183,15 @@
   # really need it.
   typeset -g POWERLEVEL9K_DISABLE_HOT_RELOAD=true
 
+  typeset -g POWERLEVEL9K_KUBECONTEXT_CLASSES=(
+      # '*prod*'  PROD    # These values are examples that are unlikely
+      '*k3s-home*'  HOME    # to match your needs. Customize them as needed.
+      '*'       DEFAULT)
+  typeset -g POWERLEVEL9K_KUBECONTEXT_HOME_FOREGROUND=$blue
+  typeset -g POWERLEVEL9K_KUBECONTEXT_HOME_VISUAL_IDENTIFIER_EXPANSION='⎈'
+  typeset -g POWERLEVEL9K_KUBECONTEXT_DEFAULT_FOREGROUND=$red
+  typeset -g POWERLEVEL9K_KUBECONTEXT_DEFAULT_VISUAL_IDENTIFIER_EXPANSION='⎈'
+
   # If p10k is already loaded, reload configuration.
   # This works even with POWERLEVEL9K_DISABLE_HOT_RELOAD=true.
   (( ! $+functions[p10k] )) || p10k reload
@@ -193,7 +203,6 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 (( ${#p10k_config_opts} )) && setopt ${p10k_config_opts[@]}
 'builtin' 'unset' 'p10k_config_opts'
 
-# Extra zsh/p10k settings
 export POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|k|kubecolor|k9s|kx'
 # Set files/dir colors
 export CLICOLOR=1
