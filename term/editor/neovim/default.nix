@@ -1,5 +1,19 @@
 {
   programs.nixvim = {
+    keymaps = [
+      {
+        mode = "n";
+        key = "<leader>w";
+        action = ":%s/\\s\\+$//e";
+        options.silent = false;
+      }
+      {
+        mode = "n";
+        key = "<leader>ca";
+        action = ":lua vim.lsp.buf.code_action()<CR>";
+        options.silent = false;
+      }
+    ];
     enable = true;
     defaultEditor = true;
     viAlias = true;
@@ -40,7 +54,7 @@
       foldlevel = 99; # Folds with a level higher than this number will be closed
     };
 
-    highlight.ExtraWhitespace.bg = "red";
+    highlight.ExtraWhitespace.bg = "#FF5C57";
     match.ExtraWhitespace = "\\s\\+$";
 
     # Example on how to change settings for certain files.
