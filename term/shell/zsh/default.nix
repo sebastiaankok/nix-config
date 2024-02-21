@@ -9,12 +9,10 @@
       kx = "switch";
       synccluster = "export KUBECONFIG=$HOME/.kube/config; echo '' > $KUBECONFIG; tsh kube login --all --set-context-name {{.KubeName}}";
       ld = "eza -lD --icons=always" ;
-      lf = "eza -lF --color=always --icons=always | grep -v /";
-      lh = "eza -dl --group-directories-first --icons=always";
-      ll = "eza -al --group-directories-first --icons=always";
-      ls = "eza -al --group-directories-first --icons=always";
-      lS = "eza -alF --color=always --sort=size --icons=always | grep -v /";
-      lt = "eza -al --sort=modified --icons=always";
+      ll = "eza -l --group-directories-first --icons=always";
+      ls = "eza -l --group-directories-first --icons=always";
+      lS = "eza -lF --color=always --sort=size --icons=always | grep -v /";
+      lt = "eza -l --sort=modified --icons=always";
       lg = "lazygit";
     };
     zplug = {
