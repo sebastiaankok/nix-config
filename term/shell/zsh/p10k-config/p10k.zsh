@@ -225,3 +225,8 @@ bindkey -e
 
 # Kubectl decode secrets
 function kpass () { jq -r '.data | map_values(@base64d)' | sed 's/\\n/\n/g;' }
+
+# Kubectl completion
+autoload -Uz compinit
+compinit
+source <(kubectl completion zsh)
