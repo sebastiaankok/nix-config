@@ -14,6 +14,7 @@ in
     # languages
     python3
     python311Packages.pip
+    pre-commit
     virtualenv
     go
 
