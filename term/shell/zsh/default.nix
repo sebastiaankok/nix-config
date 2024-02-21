@@ -12,7 +12,8 @@
       lf = "eza -lF --color=always --icons=always | grep -v /";
       lh = "eza -dl --group-directories-first --icons=always";
       ll = "eza -al --group-directories-first --icons=always";
-      ls = "eza -alF --color=always --sort=size --icons=always | grep -v /";
+      ls = "eza -al --group-directories-first --icons=always";
+      lS = "eza -alF --color=always --sort=size --icons=always | grep -v /";
       lt = "eza -al --sort=modified --icons=always";
       lg = "lazygit";
     };
