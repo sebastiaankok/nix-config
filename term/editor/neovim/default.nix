@@ -4,7 +4,7 @@
       {
         mode = "n";
         key = "<leader>w";
-        action = ":%s/\\s\\+$//e";
+        action = ":%s/\\s\\+$//e<CR>";
         options.silent = false;
       }
       {
