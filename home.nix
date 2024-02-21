@@ -27,6 +27,7 @@ in
     diff-so-fancy
     ripgrep
     eza
+    lazygit
 
     # kubernetes
     k9s
