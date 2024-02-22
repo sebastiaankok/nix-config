@@ -78,6 +78,7 @@
     ./plugins/telescope.nix
     ./plugins/efm.nix
     ./plugins/gitblame.nix
+    ./plugins/lualine.nix
   ];
 
 }
