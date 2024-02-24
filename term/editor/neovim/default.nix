@@ -79,7 +79,7 @@
     ./plugins/efm.nix
     ./plugins/gitblame.nix
     ./plugins/lualine.nix
-    ./plugins/ollama.nix
+    ./plugins/copilot.nix
   ];
 
 }
