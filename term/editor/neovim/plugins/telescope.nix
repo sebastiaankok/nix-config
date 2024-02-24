@@ -12,6 +12,8 @@
         "<leader>fd" = "diagnostics";
       };
 
+      extensions.ui-select.enable = true;
+
       keymapsSilent = true;
 
       defaults = {
