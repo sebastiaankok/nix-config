@@ -207,7 +207,7 @@ typeset -g POWERLEVEL9K_CONFIG_FILE=${${(%):-%x}:a}
 export POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|k|kubecolor|k9s|kx'
 # Set files/dir colors
 export CLICOLOR=1
-export EZA_COLORS='uu=37;5;178:gu=37;5;178:un=37;5;141:gn=38;5;141'
+export EZA_COLORS='uu=37;6;178:gu=37;5;178:un=37;5;141:gn=38;5;141'
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#888888"
 
 # Make autocomplete work for kubecolor
