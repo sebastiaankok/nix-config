@@ -7,12 +7,6 @@
         action = ":Neotree action=focus reveal toggle<CR>";
         options.silent = true;
       }
-      {
-        mode = "n";
-        key = "<leader>g";
-        action = ":Neotree float git_status<CR>";
-        options.silent = true;
-      }
     ];
 
     plugins.neo-tree = {
