@@ -12,6 +12,10 @@
           next = "<C-k>";
           prev = "<C-l>";
         };
+
+        filetypes = {
+          yaml = true;
+        };
       };
     };
   };
