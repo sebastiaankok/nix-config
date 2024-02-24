@@ -29,6 +29,7 @@ in
     ripgrep
     eza
     lazygit
+    btop
 
     # kubernetes
     k9s
