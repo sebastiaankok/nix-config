@@ -30,25 +30,6 @@ in
     eza
     lazygit
     btop
-
-    # kubernetes
-    k9s
-    kubectl
-    kubecolor
-    krew
-    kubernetes-helm
-    helm-docs
-    cilium-cli
-    teleport
-    argocd
-    stern
-    velero
-    restic
-
-    # automation
-    vault
-    vault-medusa
-    bws
   ];
 
   home.sessionVariables = {
@@ -70,5 +51,7 @@ in
     ./local.nix
     nixvim.homeManagerModules.nixvim
     ./term
+    ./unstable.nix
+    ./configuration.nix
   ];
 }
