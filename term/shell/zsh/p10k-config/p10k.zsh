@@ -210,6 +210,9 @@ export CLICOLOR=1
 export EZA_COLORS='uu=37;6;178:gu=37;5;178:un=37;5;141:gn=38;5;141'
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#888888"
 
+# Allow unfree packages from unstable repo
+export NIXPKGS_ALLOW_UNFREE=1
+
 # Make autocomplete work for kubecolor
 compdef kubecolor=kubectl
 
