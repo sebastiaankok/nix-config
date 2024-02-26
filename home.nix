@@ -14,6 +14,8 @@ in
 
   programs.git = {
     enable = true;
+    userEmail = "sebastiaan@linux.com";
+    userName = "Sebastiaan Kok";
     extraConfig = {
       color = { ui = true; };
       core = { pager = "diff-so-fancy | less --tabs=4 -RF"; };
