@@ -55,6 +55,5 @@ in
     nixvim.homeManagerModules.nixvim
     ./term
     ./unstable.nix
-    ./configuration.nix
   ];
 }
