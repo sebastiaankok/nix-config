@@ -30,6 +30,9 @@ in
     eza
     lazygit
     btop
+
+    # databases
+    postgresql
   ];
 
   home.sessionVariables = {
