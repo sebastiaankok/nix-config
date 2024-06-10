@@ -219,6 +219,9 @@ source <(switcher init zsh)
 # Export path for krew plugins
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
+# Export path for local binaries
+export PATH="${HOME}/.local/bin:$PATH"
+
 # Disable vim keybinds, to make CTLR+A work.
 bindkey -e
 
