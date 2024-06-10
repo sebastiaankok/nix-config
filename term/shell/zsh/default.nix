@@ -15,6 +15,7 @@
       lS = "eza -lF --color=always --sort=size --icons=always | grep -v /";
       lt = "eza -l --sort=modified --icons=always";
       lg = "lazygit";
+      tl = "timerecorder";
     };
     zplug = {
       enable = true;
