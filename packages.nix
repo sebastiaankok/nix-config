@@ -11,6 +11,7 @@ in {
     # languages
     python3
     python311Packages.pip
+    pipx
     pre-commit
     virtualenv
     go
@@ -31,8 +32,6 @@ in {
     # databases
     postgresql
 
-    # unstable
-    unstable.argocd
     # k8s
     unstable.k9s
     unstable.kubectl
