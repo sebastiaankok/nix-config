@@ -14,7 +14,6 @@
 
       extensions.ui-select.enable = true;
 
-      keymapsSilent = true;
 
       defaults = {
         file_ignore_patterns = [
