@@ -232,3 +232,5 @@ function kpass () { jq -r '.data | map_values(@base64d)' | sed 's/\\n/\n/g;' }
 autoload -Uz compinit
 compinit
 source <(kubectl completion zsh)
+compdef kubecolor='kubectl'
+compdef k='kubecolor'

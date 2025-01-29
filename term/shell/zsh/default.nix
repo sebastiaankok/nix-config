@@ -1,14 +1,14 @@
 {
   programs.zsh = {
     enable = true;
-    enableAutosuggestions = true;
+    autosuggestion.enable = true;
     enableCompletion = true;
     shellAliases = {
       k = "kubecolor";
       up = "home-manager switch ; source ~/.zshrc";
       kx = "switch";
       synccluster = "export KUBECONFIG=$HOME/.kube/config; echo '' > $KUBECONFIG; tsh kube login --all --set-context-name {{.KubeName}}";
-      ad = "kx k3s-home && kx ns argocd && /usr/local/bin/argocd admin dashboard --core";
+      ad = "kx k3s-home && kx ns argocd && argocd admin dashboard --core";
       ld = "eza -lD --icons=always" ;
       ll = "eza -l --group-directories-first --icons=always";
       ls = "eza -l --group-directories-first --icons=always";
@@ -16,6 +16,7 @@
       lt = "eza -l --sort=modified --icons=always";
       lg = "lazygit";
       tl = "timerecorder";
+      cat = "bat -pp";
     };
     zplug = {
       enable = true;
