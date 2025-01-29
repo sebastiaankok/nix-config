@@ -3,6 +3,15 @@
     opts.completeopt = ["menu" "menuone" "noselect"];
 
     plugins = {
+
+      #mini = {
+      #  enable = true;
+      #  modules.icons = { };
+      #  mockDevIcons = true;
+      #};
+
+      web-devicons.enable = true;
+
       luasnip.enable = true;
 
       lspkind = {

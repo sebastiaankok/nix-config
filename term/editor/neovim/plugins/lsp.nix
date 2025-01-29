@@ -28,7 +28,7 @@
           dockerls.enable = true;
           nixd.enable = true;
           # python
-          ruff-lsp.enable = true;
+          ruff_lsp.enable = true;
           pylsp = {
             enable = true;
             settings = {

@@ -2,8 +2,12 @@
   programs.nixvim.plugins = {
    lualine = {
       enable = true;
-      globalstatus = true;
-      extensions = ["neo-tree"];
+      settings = {
+        extensions = ["neo-tree"];
+        options = {
+          globalstatus = true;
+        };
+      };
     };
   };
 }

@@ -38,7 +38,7 @@
 
     luaLoader.enable = true;
 
-    options = {
+    opts = {
       number = true; # Show line numbers
       updatetime = 100; # Faster completion
       tabstop = 2; # Number of spaces a <Tab> in the text stands for (local to buffer)
@@ -80,6 +80,10 @@
     ./plugins/gitblame.nix
     ./plugins/lualine.nix
     ./plugins/copilot.nix
+    ./plugins/conform.nix
+    ./plugins/trouble.nix
+    ./plugins/markview.nix
+    ./plugins/hardtime.nix
   ];
 
 }
