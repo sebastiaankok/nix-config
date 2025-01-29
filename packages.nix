@@ -28,27 +28,42 @@ in {
     eza
     lazygit
     btop
+    nh
+    sops
+    bat
+
+    # network
+    nmap
+
+    # containers
+    docker-client
+    colima
 
     # databases
     postgresql
+
+    # citools
+    gitleaks
+    rclone
+    restic
+    ssh-to-age
 
     # k8s
     unstable.k9s
     unstable.kubectl
     unstable.kubecolor
     unstable.krew
-    unstable.kubernetes-helm
-    unstable.helm-docs
-    unstable.cilium-cli
-    unstable.teleport
-    unstable.stern
-    unstable.velero
-    unstable.restic
 
-    # Automation
-    unstable.vault
-    unstable.vault-medusa
-    unstable.bws
+    black
+    isort
+    djlint
+    jq
+    nixfmt
+    prettierd
+    shellcheck
+    stylua
+    taplo
+    yamlfmt
 
   ];
 }
